@@ -18,10 +18,10 @@ Any problem please feel free to raise a issue.
 open your xml file, and you need to firstly
 
 ### ANALYSE IT:   
-    `<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning.   
-    Note: except `<?xml version="1.0" encoding="UTF-8"?>`   
-    `<shop>` is the root tag in below Example case   
-    Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
+`<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning.   
+Note: except `<?xml version="1.0" encoding="UTF-8"?>`   
+`<shop>` is the root tag in below Example case   
+Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
 
 Example case:
 
