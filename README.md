@@ -17,11 +17,11 @@ Any problem please feel free to raise a issue.
 ## === How to Confige xml2csv.py? ===
 open your xml file, and you need to firstly
 
-ANALYSE IT:
-    <any_name_here> we call a tag in xml file, the root tag is the first tag from the beginning.
-    Note: except <?xml version="1.0" encoding="UTF-8"?>
-    <shop> is the root tag in below Example case
-    Find the tag which represent product items, like <product> here, please note that <products> is not.
+ANALYSE IT:   
+    <any_name_here> we call a tag in xml file, the root tag is the first tag from the beginning.   
+    Note: except <?xml version="1.0" encoding="UTF-8"?>   
+    <shop> is the root tag in below Example case   
+    Find the tag which represent product items, like <product> here, please note that <products> is not.   
 
 Example case:
 
@@ -51,7 +51,7 @@ Example case:
     </shop>
     ----------- end of example xml file --------
 
-By knowing <shop> is the root tag, and <product> is a product tag
+By knowing `<shop>` is the root tag, and `<product>` is a product tag
 
 1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'
 seperate tags with '/' means to the next level of tags
@@ -70,10 +70,10 @@ seperate tags with '/' means to the next level of tags
     CSV_FILE = 'xml_file.csv'
 ```
 
-4. Now comes the most important part!!
-(Note: we consider tags inside the product tag only, remind that all text is case sensitive)
-You can add or delete lines to the COL_NAMES as you want, but make sure its correctness
-For Dashboard, im_name and im_url is the compulsory.
+4. Now comes the most important part!!   
+(Note: we consider tags inside the product tag only, remind that all text is case sensitive)  
+You can add or delete lines to the COL_NAMES as you want, but make sure its correctness  
+For Dashboard, im_name and im_url is the compulsory.  
 
 Let's start:
 ```
