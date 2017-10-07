@@ -51,7 +51,7 @@ Example case:
     </shop>
     ----------- end of example xml file --------
 
-By knowing `<shop>` is the root tag, and `<product>` is a product tag
+By knowing `<shop>` is the root tag, and `<product>` is a product tag, then 'products/product' is the product trace we are looking for.
 
 1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'
 seperate tags with '/' means to the next level of tags
