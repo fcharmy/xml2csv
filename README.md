@@ -7,14 +7,12 @@ Any problem please feel free to raise a issue.
 ## === How to Run xml2csv.py? ===
 1. Copy your xml file to the directory of this file
 2. Alter the configuration for your case according to 'How to Confige?'
-3. Mac user:
-    a. Open Terminal (search in your Launchpad)
-    b. Type 'python' (without quote) and a space, then drag this file to Terminal, you'll see like this:
-        python /Users/visenze/Documents/xml2csv.py
-    c. Press Enter, wait until you see 'Complete convert XML to CSV' in Terminal
-    d. Done! you will find a csv file generated in your directory
-
-
+3. Mac user:   
+    a. Open Terminal (search in your Launchpad)   
+    b. Type 'python' (without quote) and a space, then drag this file to Terminal, you'll see like this:   
+        python /Users/visenze/Documents/xml2csv.py   
+    c. Press Enter, wait until you see 'Complete convert XML to CSV' in Terminal   
+    d. Done! you will find a csv file generated in your directory   
 
 ## === How to Confige xml2csv.py? ===
 open your xml file, and you need to firstly
@@ -57,28 +55,28 @@ By knowing <shop> is the root tag, and <product> is a product tag
 
 1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'
 seperate tags with '/' means to the next level of tags
-
+```
     ITEM_TAG_TRACE = 'product'
-
+```
 
 2. Put your xml file to the same directory with the file, then copy the file name to the following XML_FILE
-
+```
     XML_FILE = '35725_3076042_mp.xml'
-
+```
 
 3. Change CSV_FILE to the file name you like for the new csv file,
    make sure you don't have file with the same name, otherwise it will be replaced.
-   
+```
     CSV_FILE = 'xml_file.csv'
-    
+```
 
 4. Now comes the most important part!!
 (Note: we consider tags inside the product tag only, remind that all text is case sensitive)
 You can add or delete lines to the COL_NAMES as you want, but make sure its correctness
 For Dashboard, im_name and im_url is the compulsory.
 
-    Let's start:
-
+Let's start:
+```
         Copy the following line to COL_NAMES and update the value for your need
             {'column name': ['path/to/tag', '@arrtibute_name']},
 
@@ -114,9 +112,10 @@ For Dashboard, im_name and im_url is the compulsory.
 
                now the [@attribute=sku] means that,
                we fetch the value of <param> which has a attribute named 'attribute' and its value is 'sku'
-
+```
 
 5. Update the following lines for your case, then run it!
+```
 COL_NAMES = [
              {'im_name': ['.', '@product_id']},
              {'im_url': ['./URL/productImage']},
@@ -130,3 +129,4 @@ COL_NAMES = [
              {'category': ['./category/primary']},
              {'brand': ['./brand']},
              ]
+```
