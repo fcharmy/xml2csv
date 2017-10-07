@@ -10,7 +10,7 @@ Any problem please feel free to raise a issue.
 3. Mac user:   
     a. Open Terminal (search in your Launchpad)   
     b. Type 'python' (without quote) and a space, then drag this file to Terminal, you'll see like this:   
-      `python /Users/user/xml2csv.py`
+      `python /Users/user/xml2csv.py`  
     c. Press Enter, wait until you see 'Complete convert XML to CSV' in Terminal   
     d. Done! you will find a csv file generated in your directory   
 
