@@ -26,6 +26,7 @@ ANALYSE IT:
     Find the tag which represent product items, like <product> here, please note that <products> is not.
 
 Example case:
+
     --------------- xml file below -------------
     <?xml version="1.0" encoding="UTF-8"?>
     <shop>
