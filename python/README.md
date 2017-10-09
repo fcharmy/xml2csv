@@ -1,9 +1,3 @@
-# Convert XML to CSV
-Any problem please feel free to raise a issue.
-
-* xml2csv.py - python file to execute in your local pc,
-* [webpage](https://fcharmy.github.io/xml2csv/) - convert xml file online.
-
 ## === How to Run xml2csv.py? ===
 1. Copy your xml file to the directory of this file
 2. Alter the configuration for your case according to 'How to Confige?'
