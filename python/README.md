@@ -24,7 +24,7 @@ Example case:
     <shop>
       <products>
          <product name='Swimwear Women Hot Coral One Piece Swimsuit'>
-              <item id="123344">
+              <item id="123344"/>
               <url>http://abc.com/1.jpg</url>
               <price currency='GBP'>
                   <retail>44.00</retail>
@@ -33,7 +33,7 @@ Example case:
              <param name='item_url'>http://abc.com/EC123VGRE</param>
           </product>
           <product name='Men Swimsuit'>
-              <item id="123344">
+              <item id="123344"/>
               <url>http://abc.com/1.jpg</url>
               <price currency='GBP'>
                   <retail>44.00</retail>
@@ -41,7 +41,7 @@ Example case:
              <param name='sku'>EC1222EFE</param>
              <param name='item_url'>http://abc.com/EC1222EFE</param>
           </product>
-      <products>
+      </products>
     </shop>
     ----------- end of example xml file --------
 
