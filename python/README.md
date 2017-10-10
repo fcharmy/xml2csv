@@ -11,13 +11,12 @@
 ## === How to Confige xml2csv.py? ===
 open your xml file, and you need to firstly
 
-ANALYSE IT:   
-`<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning.   
-Note: except `<?xml version="1.0" encoding="UTF-8"?>`   
+FIND THE TAG:   
+`<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning except `<?xml version="1.0" encoding="UTF-8"?>`   
 `<shop>` is the root tag in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)   
 Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
 
-1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'
+1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'  
 By considering the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example), then 'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
 ```
     ITEM_TAG_TRACE = 'product'
