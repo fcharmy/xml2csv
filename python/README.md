@@ -11,7 +11,7 @@
 ## === How to Confige xml2csv.py? ===
 open your xml file, and you need to firstly
 
-### ANALYSE IT:   
+ANALYSE IT:   
 `<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning.   
 Note: except `<?xml version="1.0" encoding="UTF-8"?>`   
 `<shop>` is the root tag in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)   
