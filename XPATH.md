@@ -35,11 +35,11 @@ For given `<product>` in [example](https://github.com/fcharmy/xml2csv/blob/maste
       attribute: `currency`  
 
 * if there are many `<param>`, more specific way to get sku and product url is,  
-  column name: `sku`  
+  * column name: `sku`  
       tag path: `param[@name='sku']`  
       attribute: (empty)  
   
-  column name: `product_url`  
+  * column name: `product_url`  
       tag path: `param[@name='item_url']`  
       attribute: (empty)
   
