@@ -18,7 +18,7 @@ For given `<product>` in [example](https://github.com/fcharmy/xml2csv/blob/maste
   leave attribute empty, this will set the value of `<url>` to the column im_url instead of attribute value  
   
 * if you want the attribute of `<product>` to be the title,  
-  update tag path to `.`, which represent use the current tag   
+  update tag path to `.` which represent use the current tag   
   set attribute to `name` which will get the attribute value as column  
  
 * if you want the attribute `id` of `<item>` to be the im_name  
