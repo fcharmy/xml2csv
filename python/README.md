@@ -14,9 +14,9 @@ open your xml file, and you need to firstly
 FIND THE TAG:   
 `<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning except `<?xml version="1.0" encoding="UTF-8"?>`   
 `<shop>` is the root tag in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)   
-Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
+Find the tag which represent items, like `<product>` here, please note that `<products>` is not.   
 
-1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root),   
+1. Set following ITEM_TAG_TRACE to the path trace to item tags (except the root),   
 'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
 ```
     ITEM_TAG_TRACE = 'products/product'
@@ -34,7 +34,7 @@ Find the tag which represent product items, like `<product>` here, please note t
 ```
 
 4. Now comes the most important part   
-(Note: we consider tags inside the product tag only, remind that all text is case sensitive)
+(Note: we consider tags inside the item tag only, remind that all text is case sensitive)
 
 Let's start:
 ```
@@ -42,10 +42,10 @@ Let's start:
             {'column name': ['path/to/tag', '@arrtibute_name']},
 
         Examples:
-            a. if you want the attribute of product tag from above case to be the title,
+            a. if you want the attribute of item tag from above case to be the title,
                {'title': ['.', '@name']}
 
-               '.' represent the current product tag, do not leave it empty
+               '.' represent the current item tag, do not leave it empty
                '@name' means the attribute name of above tag, which is product tag now
                put these two in a pair of square bracket
 
@@ -78,12 +78,12 @@ Let's start:
 5. Update the COL_NAMES for your case, then run it!
 ```
 COL_NAMES = [
+             {'title': ['.', '@name']},
              {'im_name': ['./item', '@id']},
              {'im_url': ['./url']},
              {'sku': ['./param[@name=sku]']},
              {'product_url': ['./param[@name=item_url]']},
              {'price_unit': ['./price', '@currency']},
              {'price': ['./price/retail']},
-             {'title': ['.', '@name']},
              ]
 ```
