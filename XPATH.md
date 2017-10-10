@@ -1,7 +1,7 @@
 # Item path
 item will be find recursively in entire file, so it is better make sure the path will not find undesired tags.
 
-Use `/` to represent the next level, in the [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) `shop/products/product` means find `<product>` in the file which is the direct child tag of `<products>`, whose parent is `<shop>`.
+Use `/` to represent the next level, in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) `shop/products/product` means find `<product>` in the file which is the direct child tag of `<products>`, whose parent is `<shop>`.
 
 # Column tag path
 The same rules as item path, the different is this tag will only search inside each item tag.  
@@ -10,7 +10,7 @@ Note: 'tag path' is composary, if leave it empty the whole column will be empty 
       If attribute is empty, column will get the value of tag, or it will get the value of attribute.
 ```
 
-For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)
+For given `<product>` in [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)
 
 * if you want the value of `<url>` to be the value of im_url column  
   add a new column with name `im_url`   
@@ -44,7 +44,7 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
   which means it will find `<param>` with a attribute named `name` and its value is exactly equal to `sku`, then use the tag value as column.
   
 ### Summary 
-use `<product>` from [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) as example
+use `<product>` from [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) as example
                
 | column name        | tag path                 | attribute  | description  |
 | ------------------ | ------------------------ | ---------- | ------------ |
