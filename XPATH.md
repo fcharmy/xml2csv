@@ -26,11 +26,11 @@ For given `<product>` in [example](https://github.com/fcharmy/xml2csv/blob/maste
   attribute: `id`  
 
 * if you want extract price and price_unit from <price>  
-  ** column name: `price`  
+  * column name: `price`  
       tag path: `price/retail`  
       attribute: (empty)  
       
-  ** column name: `price_unit`  
+  * column name: `price_unit`  
       tag path: `price`  
       attribute: `currency`  
 
