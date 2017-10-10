@@ -23,7 +23,7 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
  
 * if you want the attribute `id` of `<item>` to be the im_name  
   tag path: `item`  
-  attribut: `id`  
+  attribute: `id`  
 
 * if you want extract price and price_unit from <price>  
   column name: `price`  
@@ -46,11 +46,11 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
 As a summary, use `<product>` from [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)
                
 | column name        | tag path                 | attribute  | description  |
-| ------------------ |:------------------------:| ----------:| ------------:|
-| im_url             | url                      |            | find `<url>` inside `<product>` and set the value of `<url>` as column  |
-| im_name            | `item`                   |   `id`     | use the current tag `<item>` and set the value of attribute `id` as column  |
-| title              | `.`                      |   `name`   | use the current tag `<product>` and set the value of attribute `name` as column  |
-| price              | `price/retail`           |            | find `<price>` under `<product>` and search for `<retail>` under `<price>` |
+| ------------------ | ------------------------ | ---------- | ------------ |
+| im_url             | `url`                    | ` `        | find `<url>` inside `<product>` and set the value of `<url>` as column  |
+| im_name            | `item`                   | `id`       | use the current tag `<item>` and set the value of attribute `id` as column  |
+| title              | `.`                      | `name`     | use the current tag `<product>` and set the value of attribute `name` as column  |
+| price              | `price/retail`           | ` `        | find `<price>` under `<product>` and search for `<retail>` under `<price>` |
 | price_unit         | `price`                  | `currency` |              |
-| sku                | `param[@name='sku']`     |            | find `<param>` with a attribute named `name` and its value is `sku`, set tag value as column |
-| product_url        | `param[@name='item_url']`|            |              |
+| sku                | `param[@name='sku']`     | ` `        | find `<param>` with a attribute named `name` and its value is `sku`, set tag value as column |
+| product_url        | `param[@name='item_url']`| ` `        |              |
