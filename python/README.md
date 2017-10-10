@@ -75,7 +75,7 @@ Let's start:
                we fetch the value of <param> which has a attribute named 'attribute' and its value is 'sku'
 ```
 
-5. Update the following lines for your case, then run it!
+5. Update the COL_NAMES for your case, then run it!
 ```
 COL_NAMES = [
              {'im_name': ['./item', '@id']},
