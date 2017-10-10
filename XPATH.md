@@ -1,7 +1,7 @@
 # Item path
 item will be find recursively in entire file, so it is better make sure the path will not find undesired tags.
 
-Use '/' to represent the next level, in the [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) 'shop/products/product' means find `<product>` in the file which is the direct child tag of `<products>`, and whose parent `<products>` tag is also a direct child tag of `<shop>`.
+Use '/' to represent the next level, in the [examle](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) 'shop/products/product' means find `<product>` in the file which is the direct child tag of `<products>`, whose parent is `<shop>`.
 
 # Column tag path
 The same rules as item path, the different is this tag will only search inside each item tag.  
