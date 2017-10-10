@@ -16,8 +16,8 @@ FIND THE TAG:
 `<shop>` is the root tag in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)   
 Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
 
-1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'  
-By considering the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example), then 'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
+1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root),   
+'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
 ```
     ITEM_TAG_TRACE = 'product'
 ```
