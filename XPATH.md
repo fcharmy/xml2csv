@@ -28,7 +28,7 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
 * if you want extract price and price_unit from <price>  
   column name: `price`  
     tag path: `price/retail`  
-    attribute: ``  
+    attribute: ` `  
   column name: `price_unit`  
     tag path: `price`  
     attribute: `currency`  
@@ -36,10 +36,10 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
 * if there are many `<param>`, more specific way to get sku and product url is,  
   column name: `sku`  
     tag path: `param[@name='sku']`  
-    attribute: ``  
+    attribute: ` `  
   column name: `product_url`  
     tag path: `param[@name='item_url']`  
-    attribute: ``
+    attribute: ` `
   
   which means it will find `<param>` with a attribute named `name` and its value is exactly equal to `sku`, then use the tag value as column.
   
