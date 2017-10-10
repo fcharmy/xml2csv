@@ -19,12 +19,12 @@ Find the tag which represent product items, like `<product>` here, please note t
 1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root),   
 'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
 ```
-    ITEM_TAG_TRACE = 'product'
+    ITEM_TAG_TRACE = 'products/product'
 ```
 
 2. Put your xml file to the same directory with the file, then copy the file name to the following XML_FILE
 ```
-    XML_FILE = '35725_3076042_mp.xml'
+    XML_FILE = 'example.xml'
 ```
 
 3. Change CSV_FILE to the file name you like for the new csv file,
@@ -33,14 +33,12 @@ Find the tag which represent product items, like `<product>` here, please note t
     CSV_FILE = 'xml_file.csv'
 ```
 
-4. Now comes the most important part!!   
-(Note: we consider tags inside the product tag only, remind that all text is case sensitive)  
-You can add or delete lines to the COL_NAMES as you want, but make sure its correctness  
-For Dashboard, im_name and im_url is the compulsory.  
+4. Now comes the most important part   
+(Note: we consider tags inside the product tag only, remind that all text is case sensitive)
 
 Let's start:
 ```
-        Copy the following line to COL_NAMES and update the value for your need
+        Copy the following line to COL_NAMES inside [] and update the value for your need
             {'column name': ['path/to/tag', '@arrtibute_name']},
 
         Examples:
@@ -80,16 +78,12 @@ Let's start:
 5. Update the following lines for your case, then run it!
 ```
 COL_NAMES = [
-             {'im_name': ['.', '@product_id']},
-             {'im_url': ['./URL/productImage']},
-             {'title': ['.', '@name']},
-             {'sku': ['.', '@sku_number']},
-             {'seller': ['.', '@manufacturer_name']},
-             {'product_url': ['./URL/product']},
+             {'im_name': ['./item', '@id']},
+             {'im_url': ['./url']},
+             {'sku': ['./param[@name=sku]']},
+             {'product_url': ['./param[@name=item_url]']},
              {'price_unit': ['./price', '@currency']},
              {'price': ['./price/retail']},
-             {'desc': ['./description/short']},
-             {'category': ['./category/primary']},
-             {'brand': ['./brand']},
+             {'title': ['.', '@name']},
              ]
 ```
