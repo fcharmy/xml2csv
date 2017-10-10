@@ -45,7 +45,7 @@ For given `<product>` in [example](https://github.com/fcharmy/xml2csv/blob/maste
   
   which means it will find `<param>` with a attribute named `name` and its value is exactly equal to `sku`, then use the tag value as column.
   
-### Summary 
+## Summary 
 use `<product>` from [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example) as example
                
 | column name        | tag path                 | attribute  | description  |
