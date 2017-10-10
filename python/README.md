@@ -14,41 +14,11 @@ open your xml file, and you need to firstly
 ### ANALYSE IT:   
 `<any_name_here>` we call a tag in xml file, the root tag is the first tag from the beginning.   
 Note: except `<?xml version="1.0" encoding="UTF-8"?>`   
-`<shop>` is the root tag in below Example case   
+`<shop>` is the root tag in the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example)   
 Find the tag which represent product items, like `<product>` here, please note that `<products>` is not.   
 
-Example case:
-
-    --------------- xml file below -------------
-    <?xml version="1.0" encoding="UTF-8"?>
-    <shop>
-      <products>
-         <product name='Swimwear Women Hot Coral One Piece Swimsuit'>
-              <item id="123344"/>
-              <url>http://abc.com/1.jpg</url>
-              <price currency='GBP'>
-                  <retail>44.00</retail>
-             </price>
-             <param name='sku'>EC123VGRE</param>
-             <param name='item_url'>http://abc.com/EC123VGRE</param>
-          </product>
-          <product name='Men Swimsuit'>
-              <item id="123344"/>
-              <url>http://abc.com/1.jpg</url>
-              <price currency='GBP'>
-                  <retail>44.00</retail>
-             </price>
-             <param name='sku'>EC1222EFE</param>
-             <param name='item_url'>http://abc.com/EC1222EFE</param>
-          </product>
-      </products>
-    </shop>
-    ----------- end of example xml file --------
-
-By knowing `<shop>` is the root tag, and `<product>` is a product tag, then 'products/product' is the product trace we are looking for.
-
 1. Set following ITEM_TAG_TRACE to the path trace to product tags (except the root), eg, 'products/product'
-seperate tags with '/' means to the next level of tags
+By considering the [example](https://github.com/fcharmy/xml2csv/blob/master/README.md#example), then 'products/product' is the product trace we are looking for, which seperate tags with '/', means to the next level of tags
 ```
     ITEM_TAG_TRACE = 'product'
 ```
