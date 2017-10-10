@@ -33,4 +33,4 @@ Any problem please feel free to raise a issue.
     ----------- end of example xml file --------
 
 By knowing `<shop>` is the root tag, and `<product>` is a item tag, so 'products/product' can be used to find a list of item tags.  
-('product' is also fine but it will find `<product>` tag inside another product tag)
+*'product' is also fine but it will find `<product>` tag inside another product tag*
