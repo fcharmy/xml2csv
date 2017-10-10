@@ -21,9 +21,9 @@ For given `<product>` in [examle](https://github.com/fcharmy/xml2csv/blob/master
   update tag path to `.`, which represent use the current tag   
   set attribute to `name` which will get the attribute value as column  
  
-* if you want the attribute `id` of `<item>` to be the im_name
-  tag path: `item`
-  attribut: `id`
+* if you want the attribute `id` of `<item>` to be the im_name  
+  tag path: `item`  
+  attribut: `id`  
 
 * if you want extract price and price_unit from <price>  
   column name: `price`  
