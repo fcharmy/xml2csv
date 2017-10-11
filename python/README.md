@@ -1,5 +1,5 @@
 ## === How to Run xml2csv.py? ===
-1. Copy your xml file to the directory of this file
+1. Download xml2csv.py, put this file and your xml file to the same directory 
 2. Alter the configuration for your case according to 'How to Confige?'
 3. Mac user:   
     a. Open Terminal (search in your Launchpad)   
