@@ -2,7 +2,7 @@
 Any problem please feel free to raise a issue.
 
 * [webpage](https://fcharmy.github.io/xml2csv/) - convert xml file online, [learn more](XPATH.md)
-* [xml2csv.py](python/xml2csv.py) - python file to execute in your local pc.
+* [xml2csv.py](python) - python file to execute in your local pc.
 
 ### Example
 
